@@ -5,6 +5,7 @@ class ScalaAT213 < Formula
   mirror "https://downloads.typesafe.com/scala/2.13.0-M2/scala-2.13.0-M2.tgz"
   mirror "https://www.scala-lang.org/files/archive/scala-2.13.0-M2.tgz"
   sha256 "3b83c4165d6be1854078ace552dd424acca6ddf718a908f103c206847802e808"
+  version "2.13.0-M2"
 
   bottle :unneeded
 

@@ -1,11 +1,11 @@
 class ScalaAT213 < Formula
   desc "JVM-based programming language"
   homepage "https://www.scala-lang.org/"
-  url "https://downloads.lightbend.com/scala/2.13.0-M2/scala-2.13.0-M2.tgz"
-  mirror "https://downloads.typesafe.com/scala/2.13.0-M2/scala-2.13.0-M2.tgz"
-  mirror "https://www.scala-lang.org/files/archive/scala-2.13.0-M2.tgz"
-  sha256 "3b83c4165d6be1854078ace552dd424acca6ddf718a908f103c206847802e808"
-  version "2.13.0-M2"
+  url "https://downloads.lightbend.com/scala/2.13.0-M4/scala-2.13.0-M4.tgz"
+  mirror "https://downloads.typesafe.com/scala/2.13.0-M4/scala-2.13.0-M4.tgz"
+  mirror "https://www.scala-lang.org/files/archive/scala-2.13.0-M4.tgz"
+  version "2.13.0-M4"
+  sha256 "ffb55a42c98662879a9966c464470e5fbc2ac11d7d276f6b3c811c37c3c6ddb5"
 
   bottle :unneeded
 
@@ -17,14 +17,14 @@ class ScalaAT213 < Formula
   depends_on :java => "1.8+"
 
   resource "docs" do
-    url "https://downloads.lightbend.com/scala/2.13.0-M2/scala-docs-2.13.0-M2.txz"
-    mirror "https://www.scala-lang.org/files/archive/scala-docs-2.13.0-M2.txz"
-    sha256 "add2e7d495aedeab0825b8214eb5782c0ab3fa4b65d2e763203d830364e9bbdc"
+    url "https://downloads.lightbend.com/scala/2.13.0-M4/scala-docs-2.13.0-M4.txz"
+    mirror "https://www.scala-lang.org/files/archive/scala-docs-2.13.0-M4.txz"
+    sha256 "255919aada09e5ed527b47b3523ed50de82ab0be83e995f5c5192e0e2b3e4bb1"
   end
 
   resource "src" do
-    url "https://github.com/scala/scala/archive/v2.13.0-M2.tar.gz"
-    sha256 "8077199f57c3b5422e7943254e8395128a3c0d4114688804f7c17d2ff8e93709"
+    url "https://github.com/scala/scala/archive/v2.13.0-M4.tar.gz"
+    sha256 "ecfea5a5338349d20ee7031a5a09a1a51041ea42d511879b6b9d157a278daedd"
   end
 
   resource "completion" do

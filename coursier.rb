@@ -9,8 +9,7 @@ class Coursier < Formula
   bottle :unneeded
 
   def install
-    mv "cs-x86_64-apple-darwin", "coursier"
-    bin.install "coursier"
+    bin.install "cs-x86_64-apple-darwin" => "coursier"
   end
 
   test do

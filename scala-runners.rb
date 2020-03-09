@@ -6,6 +6,7 @@ class ScalaRunners < Formula
   depends_on "coursier/formulas/coursier"
 
   def install
-    bin.install Dir["scala*"]
+    libexec.install Dir["scala*"]
+    bin.install_symlink [libexec/"scala", libexec/"scalac", libexec/"scaladoc", libexec/"scalap"]
   end
 end

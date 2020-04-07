@@ -2,16 +2,17 @@ cask 'graalvm-ce-java8@19.3' do
   version '19.3.1'
   sha256 'eba3765174f0279ae2dc57c84fc0eb324da778dbfdcc03c6fa8381fe3728aef9'
 
+  NAME = 'graalvm-ce-java8'
   JVMS_DIR = '/Library/Java/JavaVirtualMachines'.freeze
-  TARGET_DIR = "#{JVMS_DIR}/#{cask}-#{version}".freeze
+  TARGET_DIR = "#{JVMS_DIR}/#{NAME}-#{version}".freeze
 
   # github.com/graalvm/graalvm-ce-builds was verified as official when first introduced to the cask
-  url "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-#{version}/#{cask}-darwin-amd64-#{version}.tar.gz"
+  url "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-#{version}/#{NAME}-darwin-amd64-#{version}.tar.gz"
   appcast 'https://github.com/oracle/graal/releases.atom'
   name 'GraalVM Community Edition (Java 8)'
   homepage 'https://www.graalvm.org/'
 
-  artifact "#{cask}-#{version}", target: TARGET_DIR
+  artifact "#{NAME}-#{version}", target: TARGET_DIR
 
   caveats <<~EOS
     Installing GraalVM CE (Java 8) in #{JVMS_DIR} requires root permissions.

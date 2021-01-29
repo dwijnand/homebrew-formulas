@@ -10,7 +10,7 @@ class ScalaAT210 < Formula
 
   keg_only :versioned_formula
 
-  depends_on :java => "1.8"
+  depends_on "openjdk@8"
 
   def install
     rm_f Dir["bin/*.bat"]

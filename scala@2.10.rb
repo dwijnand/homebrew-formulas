@@ -6,8 +6,6 @@ class ScalaAT210 < Formula
   mirror "https://www.scala-lang.org/files/archive/scala-2.10.7.tgz"
   sha256 "9283119916f6bb7714e076a2840ccf22d58819b355228ed1591ae6f76929f111"
 
-  bottle :unneeded
-
   keg_only :versioned_formula
 
   depends_on "openjdk@8"

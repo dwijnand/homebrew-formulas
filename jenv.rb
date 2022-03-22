@@ -5,8 +5,6 @@ class Jenv < Formula
   sha256 "a038ab91962c8a1b14391eb383fc6472468c56338526a406f486e9ff6c794dbc"
   head "https://github.com/dwijnand/jenv.git"
 
-  bottle :unneeded
-
   def install
     libexec.install Dir["*"]
     bin.write_exec_script libexec/"bin/jenv"

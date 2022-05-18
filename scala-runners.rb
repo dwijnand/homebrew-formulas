@@ -3,7 +3,7 @@ class ScalaRunners < Formula
   homepage "https://github.com/dwijnand/scala-runners"
   head 'git://github.com/dwijnand/scala-runners.git', :branch => "main"
 
-  depends_on "coursier/formulas/coursier"
+  depends_on "coursier"
 
   def install
     bin.install Dir["scala*"]
